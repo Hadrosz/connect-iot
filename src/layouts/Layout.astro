@@ -2,6 +2,7 @@
 import { ViewTransitions } from "astro:transitions";
 import Navbar from "../components/Navbar.astro";
 import Footer from "../components/Footer.astro";
+import Lenis from "lenis";
 
 interface Props {
   title: string;
@@ -33,6 +34,7 @@ const { title, description } = Astro.props;
       html {
         height: auto;
         font-family: Helixa;
+        scroll-behavior: smooth;
         font-size: 16px;
       }
 
