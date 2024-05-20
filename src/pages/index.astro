@@ -5,7 +5,7 @@ import { homeSEO } from "../utils/seoconfig";
 
 <Layout title={homeSEO.title} description={homeSEO.description}>
   <section class="w-full bg-black text-white flex overflow-visible">
-    <container class="px-6 max-w-5xl w-full mx-auto h-[400px] mt-[92px]">
+    <container class="px-6 max-w-6xl w-full mx-auto h-[400px] mt-[92px]">
       <div class="flex
       justify-between content-end items-end">
         <div class="w-2/3 text-pretty flex flex-col gap-6">
@@ -19,10 +19,12 @@ import { homeSEO } from "../utils/seoconfig";
         </div>
         <button class="primary-button">Discover More</button>
       </div>
-      <img class="w-full mt-6" src="/image21.png" />
+      <video class="w-full mt-6 rounded-lg" autoplay loop
+        ><source src="/videos/home-banner.mp4" type="video/mp4" /></video
+      >
     </container>
   </section>
-  <section class="w-full bg-[#F8F9F8] text-black flex pt-[320px] pb-[270px]">
+  <section class="w-full bg-[#F8F9F8] text-black flex pt-[420px] pb-[270px]">
     <container class="px-6 max-w-5xl w-full mx-auto">
       <div class="w-5/6 flex flex-col gap-6">
         <h2 class="font-black text-3xl">The future of Community Management</h2>
@@ -38,7 +40,9 @@ import { homeSEO } from "../utils/seoconfig";
         <h3 class="font-black text-2xl text-center">
           One Platform, Multiple Solutions.
         </h3>
-        <img src="/image21.png" class="mt-6 mb-16" />
+        <video class="w-full mt-6 mb-16 rounded-lg" autoplay loop
+          ><source src="/videos/Mockup.mp4" type="video/mp4" /></video
+        >
         <ul class="flex gap-4">
           <li>
             <a class="flex items-center gap-2 p-5 bg-white rounded-2xl"
