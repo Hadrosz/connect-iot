@@ -1,0 +1,39 @@
+---
+import { navbar } from "../utils/navbar";
+
+const { pathname } = Astro.url;
+---
+
+<section class="bg-black text-lg w-full">
+  <nav class="max-w-5xl px-6 py-4 mx-auto flex justify-between items-center">
+    <div><a href="/"><img src="/logo.svg" /></a></div>
+    <div>
+      <ul class="flex justify-center gap-16">
+        {
+          navbar.map((element) => (
+            <li
+              class:list={[
+                "p-2",
+                {
+                  "opacity-100 text-[#99C8F6]": pathname === element.pathname,
+                  "opacity-50 text-[white]": pathname !== element.pathname,
+                },
+              ]}
+            >
+              <a href={element.pathname}>{element.text}</a>
+            </li>
+          ))
+        }
+      </ul>
+    </div>
+  </nav>
+</section>
+<style>
+  li {
+    transition: 0.2s all;
+  }
+
+  li:hover {
+    opacity: 1;
+  }
+</style>
